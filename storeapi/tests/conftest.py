@@ -9,7 +9,7 @@ from httpx import AsyncClient, Request, Response
 os.environ["ENV_STATE"] = "test"
 from storeapi.database import database, user_table  # noqa: E402
 from storeapi.main import app  # noqa: E402
-
+# configuration for testing part of the application of this project
 
 @pytest.fixture(scope="session")
 def anyio_backend():
